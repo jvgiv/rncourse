@@ -24,7 +24,10 @@ export default class App extends Component {
         places: prevState.places.concat({
           key: Math.random(), 
           name: placeName,
-          image: placeImage
+          image: placeImage,
+          image2: {
+            uri: 'https://hips.hearstapps.com/digitalspyuk.cdnds.net/17/19/1494327191-better-call-saul-season-3.jpg?crop=0.637xw:0.956xh;0.190xw,0&resize=480:*'
+          }
         })
       };
     });
