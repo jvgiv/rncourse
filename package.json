@@ -9,6 +9,7 @@
     "android": "react-native run-android"
   },
   "dependencies": {
+    "node": "^12.3.1",
     "react": "16.8.3",
     "react-native": "0.59.8"
   },
