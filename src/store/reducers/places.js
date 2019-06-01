@@ -11,7 +11,7 @@ const reducer = (state = initialState, action) => {
         case ADD_PLACE:
             return {
                 ...state,
-                places: prevState.places.concat({
+                places: state.places.concat({
                     key: Math.random(), 
                     name: action.placeName,
                     image2: {
@@ -22,15 +22,15 @@ const reducer = (state = initialState, action) => {
         case DELETE_PLACE:
             return {
                 ...state,
-                places: prevState.places.filter(place  => {
-                    return place.key !== prevState.selectedPlace.key;
+                places: state.places.filter(place  => {
+                    return place.key !== state.selectedPlace.key;
                   }),
                   selectedPlace: null
             }
         case SELECT_PLACE:
             return {
                 ...state,
-                selectedPlace: prevState.places.find(place => {
+                selectedPlace: state.places.find(place => {
                     return place.key === action.placeKey;
                   })
             }

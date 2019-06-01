@@ -1,5 +1,5 @@
 import React from 'react'
-import { Modal, View, Image, Text, Button, StyleSheet } from 'react-native'
+import { Modal, View, Image, Text, Button, StyleSheet, TouchableOpacity } from 'react-native'
 
 const placeDetail = props => {
     let modalContent = null;
